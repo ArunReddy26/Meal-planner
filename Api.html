@@ -1,0 +1,161 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="Api.css">
+</head>
+
+<body>
+
+    <!-- 
+Nav bar section  -->
+    <header>
+        <a href="#" class="logo">Meal Planner</a>
+        <nav>
+            <a href="#" class="active">Home</a>
+            <a href="#form-id">Details</a>
+            <a href="#Mealplan">Meal Plan</a>
+            <a href="#steps">Recipes</a>
+
+        </nav>
+
+    </header>
+
+
+
+
+
+    <!-- <nav>
+            <div class="logo">
+                <img src="healthy-food.webp" alt="Logo">
+            </div>
+            <h1 class="site-title">Meal Planner</h1>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#form-id">Details</a></li>
+                <li><a href="#cards">Meal Plan</a></li>
+                <li><a href="#lastsection">Recipes</a></li>
+            </ul>
+        </nav> -->
+
+
+    <!-- form section -->
+
+    <form id="form-id">
+        <div class="mydivcontainer">
+            <div class="mydiv">
+                <label for="height"></label>
+                <input type="number" placeholder="Enter Height" id="height" required>
+
+            </div>
+            <div class="mydiv">
+                <label for="weight"></label>
+                <input type="number" placeholder="Enter Weight" id="weight" required>
+            </div>
+
+            <div class="mydiv">
+                <label for="age"></label>
+                <input type="number" placeholder="Enter Age" id="age" required>
+            </div>
+
+            <div class="mydiv">
+                <label for="gender"></label>
+                <select id="gender" required>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                </select>
+            </div>
+
+            <div class="mydiv">
+                <label for="activity"></label>
+                <select id="activity" required>
+                    <option value="light">Light</option>
+                    <option value="moderate">Moderate</option>
+                    <option value="active">Active</option>
+                </select>
+            </div>
+        </div>
+    </form>
+
+    <div class="btn">
+        <button class="btn1" id="formbutton">Generate Meals</button>
+    </div>
+
+    <!-- 
+    Meal card section -->
+    <div id="Mealplan">
+
+        <div class="container-card" id="cards">
+            <div class="card" id="card1">
+                <div>
+                    <h1>BREAKFAST</h1>
+                    <img src="https://www.acouplecooks.com/wp-content/uploads/2021/01/Peanut-Butter-Oatmeal-018s.jpg"
+                        alt="Card 1 Image">
+                    <h2>Peanut Butter and Chocolate Oatmeal</h2>
+                    <p>Calories</p>
+                    <button onclick="recipebtn()">GET RECIPE</button>
+                </div>
+            </div>
+            <div class="card" id="card2">
+                <div>
+                    <h1>LUNCH</h1>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2n_nABLmehwpFYIRDJCUYLFqt_dS1_8OJSw&usqp=CAU%22"
+                        alt="Card 2 Image">
+                    <h2>Spinach and Feta Stuffed Peppers</h2>
+                    <p>Calories</p>
+                    <button onclick="recipebtn1()">GET RECIPE</button>
+                </div>
+            </div>
+            <div class="card" id="card3">
+                <div>
+                    <h1>DINNER</h1>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPx-vjd_TgOBi290TXM8eErstzNjJ72DYPLg&usqp=CAU"
+                        alt="Card 3 Image">
+                    <h2>Lentil Soup</h2>
+                    <p>Calories</p>
+                    <button onclick="recipebtn2()">GET RECIPE</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!-- Ingredients and steps section  -->
+
+    <div class="container">
+        <div class="cards" id="ingredients">
+            <div>
+                <h2>INGREDIENTS</h2>
+                <p id="quotation">"You don’t have to eat less, you just have to eat right.”</p>
+                <ul id="first-ul">
+
+                </ul>
+            </div>
+
+        </div>
+        <div class="cards" id="steps">
+            <div>
+                <h2>STEPS</h2>
+                <p id="quotation1">"A recipe has no soul. You must bring soul to the recipe." </p>
+                <ol id="second-ol">
+
+
+                </ol>
+            </div>
+        </div>
+    </div>
+
+
+    <footer class="last">
+        <div class="footer-content">
+            Copyright @ 2023, Meal Planner Project Built By Arun Kumar Reddy
+
+        </div>
+    </footer>
+
+    <script src="Api.js"></script>
+
+</body>
+
+</html>
